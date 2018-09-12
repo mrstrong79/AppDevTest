@@ -195,6 +195,12 @@ The two RegionInfo instances are equal.
             //Output: 26.04.2012
         }
 
+        public static void FormatDate()
+        {
+            DateTime dt = DateTime.Now;
+            Console.WriteLine(string.Format("date is now: {0}",dt.ToString("dd/MM/yyyy HH:mm")));
+        }
+
         public static void ShowDateInMexicanSpanishFormat()
         {
             DateTimeFormatInfo di = new CultureInfo("es-MX",false).DateTimeFormat;
